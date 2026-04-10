@@ -24,7 +24,7 @@ Node_Number = 1
 # --- WIFI CONSTANTS ---
 WIFI_SSID = "PLACEHOLDER" # Wifi Name
 WIFI_PASSWORD = "PLACEHOLDER" # Wifi Password
-HUB_IP = "PLACEHOLDER" # IP of the HUB, but TailScale
+HUB_IP = "PLACEHOLDER" # IP of the Hub, but TailScale
 PORT = 5005
 
 # --- NETWORKING ---
