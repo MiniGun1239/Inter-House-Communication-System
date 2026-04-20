@@ -54,7 +54,7 @@ amp = None
 # --- Mic Setup ---
 try:
     # Pins: SCK = GP26, WS = GP27, SD = 28
-    mic = audiobusio.I2SIn(board.GP26, board.GP27, board.GP28)
+    mic = audiobusio.I2SIn(board.GP26, board.GP27, board.GP22)
 except Exception as e:
     if DEBUG and DEBUG_PRINT == 0:
         print("[DEBUG] Mic Setup Failed: ", e)
@@ -63,7 +63,7 @@ except Exception as e:
 try:
     # Pins: BCLK = GP26, LRC = GP27, DIN = GP22
     # Shared bus so its not out of sync
-    amp = audiobusio.I2SOut(board.GP26, board.GP27, board.GP22)
+    amp = audiobusio.I2SOut(board.GP26, board.GP27, board.GP28)
 except Exception as e:
     if DEBUG and DEBUG_PRINT == 0:
         print("[DEBUG] Amp Setup Failed: ", e)
