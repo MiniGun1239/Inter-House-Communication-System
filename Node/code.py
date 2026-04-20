@@ -61,8 +61,9 @@ except Exception as e:
 
 # --- Amp Setup ---
 try:
-    # Pins: BCLK = GP20, LRC = GP21, DIN = GP22
-    amp = audiobusio.I2SOut(board.GP20, board.GP21, board.GP22)
+    # Pins: BCLK = GP26, LRC = GP27, DIN = GP22
+    # Shared bus so its not out of sync
+    amp = audiobusio.I2SOut(board.GP26, board.GP27, board.GP22)
 except Exception as e:
     if DEBUG and DEBUG_PRINT == 0:
         print("[DEBUG] Amp Setup Failed: ", e)
