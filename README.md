@@ -10,6 +10,10 @@ CAD Render
 
 ![img_1.png](Resources/img_1.png)
 
+Wiring Diagram (Node)
+---
+![Node Wiring Diagram.png](Resources/Node_Wiring_Diagram.png)
+
 BOM
 ---
 | Name                    | Purpose                                                  | Quantity | Total Cost (USD) | Link                                                           | Distributor          |
